@@ -1,4 +1,5 @@
 import './App.css';
+import Home from './Home';
 import logo from './logo.svg';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React111
+          <Home />
         </a>
       </header>
     </div>
