@@ -4,8 +4,6 @@ import logo from './logo.svg';
 function App() {
   let text = 'hello';
 
-  var C = 'ss';
-  let b = 'a';
   return (
     <div className="App">
       <header className="App-header">
