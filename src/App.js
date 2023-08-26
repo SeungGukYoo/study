@@ -4,7 +4,7 @@ import logo from './logo.svg';
 
 function App() {
   let text = 'hello JO';
-
+  let b = 'ABC';
   return (
     <div className="App">
       <header className="App-header">
