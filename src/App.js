@@ -3,7 +3,7 @@ import Home from './Home';
 import logo from './logo.svg';
 
 function App() {
-  let text = 'hello';
+  let text = 'hello JO';
 
   return (
     <div className="App">
