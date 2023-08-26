@@ -1,7 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './logo.svg';
 
 function App() {
+  let text = 'hello';
+
+  var C = 'ss';
+  let b = 'a';
   return (
     <div className="App">
       <header className="App-header">
@@ -9,6 +13,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>{text}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
