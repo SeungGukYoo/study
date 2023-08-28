@@ -10,6 +10,5 @@ jobs:
   cicd:
     runs-on: ubuntu-latest
     steps:
-	  - run: node -v
-    
-		- run: echo 안녕
+	    - run: node -v
+		  - run: echo 안녕
