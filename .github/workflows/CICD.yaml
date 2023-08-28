@@ -10,7 +10,6 @@ jobs:
   cicd:
     runs-on: ubuntu-latest
     steps:
-    - name: "print node version"
-			run: node -v
-
+	  - run: node -v
+    
 		- run: echo 안녕
