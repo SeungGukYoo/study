@@ -9,6 +9,6 @@ on:
 jobs:
   cicd:
     runs-on: ubuntu-latest
-    steps:
-	    - run: node -v
+     steps:
+      - run: node -v
 		  - run: echo 안녕
