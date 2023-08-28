@@ -18,7 +18,8 @@
     "eject": "react-scripts eject",
     "format": "prettier --cache --write .",
     "lint": "eslint --cache .",
-    "save": "eslint --cache . && "
+    "save": "eslint --cache . && ",
+    "deploy": "npm run build && aws s3 sync build/ s3://wanted-aws-self-study --delete"
   },
   "eslintConfig": {
     "extends": [

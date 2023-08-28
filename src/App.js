@@ -1,10 +1,11 @@
 import './App.css';
-import Home from './Home';
+import Sub from './Components/Sub';
+
 import logo from './logo.svg';
 
 function App() {
-  let text = 'hello JO';
-  let b = 'ABC';
+  let text = 'hello BRO';
+
   return (
     <div className="App">
       <header className="App-header">
@@ -13,6 +14,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>{text}!!</p>
+        <Sub />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,8 +22,6 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React111
-          <Home />
-          {b}
         </a>
       </header>
     </div>
