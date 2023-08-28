@@ -3,13 +3,14 @@ name: CI/CD
 on:
   push:
     branches:
-      - main
+    - main
+  workflow_dispatch:
 
 jobs:
   cicd:
     runs-on: ubuntu-latest
     steps:
-			- name: "print node1"
-				run: node -v
+    - name: "print node version"
+			run: node -v
 
-      - run: echo run cicd
+		- run: echo 안녕
