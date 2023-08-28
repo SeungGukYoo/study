@@ -4,7 +4,7 @@ import Sub from './Components/Sub';
 import logo from './logo.svg';
 
 function App() {
-  let text = 'hello BRO';
+  let text = 'HELLO GIT ACTIONS';
 
   return (
     <div className="App">

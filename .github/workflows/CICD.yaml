@@ -15,8 +15,15 @@ jobs:
           ref: 'main'
       - run: npm ci
       - run: npm run test
-
-      - name: 'print echo'
-        run: echo 안녕
-
-      - run: node -v
+      - run: echo 테스트
+      - run: npm run build
+      - name: deploy to s3
+      - uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'ap-northeast-2'
+          SOURCE_DIR: 'build'
