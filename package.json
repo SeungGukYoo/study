@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --cache --write",
+    "format": "prettier --cache --write src/",
     "lint": "eslint --cache src/",
     "save": "eslint --cache . && ",
     "deploy": "npm run build && aws s3 sync build/ s3://wanted-aws-self-study --delete"
@@ -46,7 +46,7 @@
   },
   "lint-staged": {
     "src/**/*.js": [
-      "prettier --write"
+      "prettier"
     ]
   },
   "devDependencies": {
