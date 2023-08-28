@@ -9,5 +9,6 @@ jobs:
   cicd:
     runs-on: ubuntu-latest
     steps:
+			- name: "print node"
       - run: node -v
       - run: echo run cicd
