@@ -3,7 +3,7 @@ name: CI/CD
 on:
   push:
     branches:
-    - main
+      - main
   workflow_dispatch:
 
 jobs:
@@ -11,4 +11,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: node -v
-		  - run: echo 안녕
