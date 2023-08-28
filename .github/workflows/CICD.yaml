@@ -1,13 +1,13 @@
 name: CI/CD
 
 on:
-	push:
-		branches:
-			- main
+  push:
+    branches:
+      - main
 
 jobs:
-	cicd:
-		runs-on: ubuntu-latest
-		steps:
-			-run: node -v
-			-run: echo hello world
+  cicd:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node -v
+      - run: echo run cicd
